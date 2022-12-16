@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFF;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header .logo{
+    display: inline-block;
+    font-size: 27px;
+}
+
+header .logo .blue_dot {
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+header nav {
+    display: inline-block;  
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 0.37px;
+    margin-right: 24px;
+    text-decoration: none;
+}
+
+header nav ul li a#left_header:hover {
+    color: #000;
+}
+
+header nav ul li a#right_header:hover {
+    color: #87898F;
+}
+
+header nav ul li:last-of-type a {
+    margin-right: 0;
+}
+
+section.sign-up {
+    padding-top: 70px;
+}
+
+section.sign-up .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+section.sign-up .register {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-bottom: 6px;
+    font-weight: normal;
+    margin-top: 0;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    width: 40%;
+    text-align: center;
+    padding: 35px;
+}
+
+section.sign-up .form {
+    width: 100%;
+}
+
+section.sign-up .form .input_field {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+section.sign-up .form .input_field label {
+    width: 200px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+section.sign-up .form .input_field .input,
+section.sign-up .form .input_field .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #DDD;
+    font-size: 15px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+}
+
+section.sign-up .form .input_field .textarea {
+    resize: none;
+    height: 100px;
+}
+
+section.sign-up .form .input_field .custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+section.sign-up .form .input_field .custom_select select {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #DDD;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    outline: none;
+}
+
+section.sign-up .form .input_field .custom_select:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #DDD transparent transparent transparent;
+    pointer-events: none;
+}
+
+section.sign-up .form .input_field .input:focus,
+section.sign-up .form .input_field .textarea:focus,
+section.sign-up .form .input_field select:focus {
+    background-color: #FFF;
+    border: 1px solid #4863A0	;
+}
+
+section.sign-up .form .input_field .button {
+    margin-top: 15px;
+    height: 50px;
+    width: 200.5px;
+    background-color: white;
+    border: 1px solid #DDD;
+    border-radius: 220px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.sign-up .form .input_field .button:hover {
+    border-color: #DDD;
+    background-color: #DDD;
+}
+
+section.sign-up .form .input_field:last-child {
+    margin-bottom: 0px;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+footer .bottom-nav {
+    padding: 60px 0;
+    background-color: #161313;
+}
+
+footer .bottom-nav .container {
+    max-width: 955px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom-nav ul {
+    list-style: none;
+}
+
+footer .bottom-nav ul li a {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+footer .bottom-nav ul li a:hover {
+    color: #87898F;
+}
+
+footer .bottom-nav ul li.list-title {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+footer .copyright-text {
+    color: #FFF;
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+}

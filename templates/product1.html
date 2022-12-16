@@ -1,0 +1,189 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instruments</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/product1_style.css' %}">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="left_header">
+                            <section class="logo">
+                                <strong>Gamma</strong>
+                                <span class="blue_dot"></span> 
+                                <span>Store</span>
+                            </section>
+                        </a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="instruments.html" id="right_header">Instruments</a></li>
+                        <li><a href="equipment_accessories.html" id="right_header">Equipment/Accessories</a></li>
+                        <li><a href="sign_in.html" id="right_header">Sign in</a></li>
+                        <li><a href="cart.html" id="right_header">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="products">
+            <div class="product-slider">
+                <div class="container">
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/yamaha_u1.jpg' %}" width="100%" alt="">
+
+                            <div class="small-image-group">
+                                <div class="small-img-col">
+                                    <img src="{% static 'images/yamaha_u1_small1.jpg' %}" width="100%" class="small-img" alt="">
+                                </div>
+                                <div class="small-img-col">
+                                    <img src="{% static 'images/yamaha_u1_small2.jpg' %}" width="100%" class="small-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h2 class="title">Yamaha U1 piano</h2>
+                            <h2 class="price">
+                                <span class="discounted-price">5290 lei</span>
+                                <span class="original-price">5900 lei</span>
+                            </h2>
+
+                            <div class="audio">
+                                <audio controls src="{% static 'sounds/Yamaha U1 Upright Piano Demo.mp3' %}"></audio>
+                                <button>Add to cart</button>
+                            </div>
+
+                            <div class="description">
+                                <h4>Description:</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu fringilla sapien. Phasellus eget tortor efficitur risus tristique mollis. Donec tincidunt, sapien sed volutpat mollis, lacus orci laoreet nibh, quis accumsan magna erat et mauris. Integer ullamcorper venenatis elit, accumsan aliquam ante euismod sagittis. In hac habitasse platea dictumst. Phasellus quis ligula eu lorem pharetra sodales quis eget tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                <p>Praesent sit amet elementum ante. Donec varius orci vel venenatis aliquam. Vestibulum eu molestie nibh. Nullam cursus justo maximus, tempor odio sit amet, ultrices nibh. Donec viverra id tellus a tristique. Cras leo lectus, efficitur sed ornare sed, iaculis vitae ex. Pellentesque lectus dui, aliquet non efficitur eu, consequat id mi.</p>
+                            <div>
+
+                            <div class="specification">
+                                <ul>
+                                    <h4>Specifications:</h4>
+                                    <li>Aliquam ullamcorper mi vel mauris tempor mollis.</li>
+                                    <li>Nulla accumsan libero bibendum sagittis tincidunt.</li>
+                                    <li>Integer feugiat ante ac enim feugiat molestie.</li>
+                                    <li>Etiam tristique ante in arcu euismod, sed pellentesque elit molestie.</li>                                
+                                </ul>
+                            </div>
+
+                        </div> 
+                    </div>
+            </div>
+        </section>
+
+        <section class="best-sellers">
+            <h2>Related Products</h2>
+            <hr>
+            <div class="product-s">
+                <div class="container">
+
+                    <div class="product new">
+                        <div class="product-picture">
+                            <img src="{% static 'images/best_seller1.jpg' %}" alt="product: Fender player electric guitar">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h4 class="title">Fender player electric guitar</h4>
+                            <h3 class="price">
+                                <span>4100 lei</span>
+                            </h3>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/best_seller2.jpg' %}" alt="product: JBL Tune 710bt wireless headphones">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Equipment & Accessories</h5>
+                            <h4 class="title">JBL Tune 710bt wireless headphones</h4>
+                            <h3 class="price">
+                                <span class="discounted-price">349 lei</span>
+                                <span class="original-price">379 lei</span>
+                            </h3>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product new">
+                        <div class="product-picture">
+                            <img src="{% static 'images/best_seller3.jpg' %}" alt="product: Electro-Voice ZLX 15 speaker">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Equipment & Accessories</h5>
+                            <h4 class="title">Electro-Voice ZLX 15 speaker</h4>
+                            <h3 class="price">
+                                <span>1879 lei</span>
+                            </h3>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        
+        </section>
+
+        <footer>
+
+            <div class="bottom-nav">
+                <div class="container">
+
+                    <ul>
+                        <li class="list-title">Categories</li>
+                        <li><a href="instruments.html">Instruments</a></li>
+                        <li><a href="equipment_accessories.html">Equipment</a></li>
+                        <li><a href="equipment_accessories.html">Accessories</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">About Us</li>
+                        <li><a href="about_us.html">Our Story</a></li>
+                        <li><a href="about_us.html">Awards</a></li>
+                        <li><a href="about_us.html">Stores</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Social Media</li>
+                        <li><a href="https://www.facebook.com/cristinxvasiliu">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/robitrif/">Instagram</a></li>
+                        <li><a href="https://twitter.com/BarackObama?">Twitter</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Customer Service</li>
+                        <li><a href="customer_service.html">Contact Us</a></li>
+                        <li><a href="customer_service.html">Terms & Conditions</a></li>
+                        <li><a href="customer_service.html">Delivery & Returns</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="copyright-text">
+                2022 &copy; All Rights Reserved
+            </div>
+
+        </footer>
+    </body>
+
+</html>

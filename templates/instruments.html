@@ -1,0 +1,191 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instruments</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/instruments_style.css' %}">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="left_header">
+                            <section class="logo">
+                                <strong>Gamma</strong>
+                                <span class="blue_dot"></span> 
+                                <span>Store</span>
+                            </section>
+                        </a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="instruments.html" id="right_header">Instruments</a></li>
+                        <li><a href="equipment_accessories.html" id="right_header">Equipment/Accessories</a></li>
+                        <li><a href="sign_in.html" id="right_header">Sign in</a></li>
+                        <li><a href="cart.html" id="right_header">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="products">
+            <div class="product-slider">
+                <div class="container">
+                    <div class="product new">
+                        <div class="product-picture">
+                            <img src="{% static 'images/acoustic_electric_guitar1.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h2 class="title">Taylor T5z Pro Acoustic-Electric Guitar Pacific Blue</h2>
+                            <h4 class="description">Upgraded aesthetics elevate the Taylor T5z Pro acoustic-electric from the Standard and Classic models. Featuring a beautifully figured Big Leaf maple top, the T5z Pro boasts two high-definition humbucker pickups and an acoustic body sensor controlled by five-way switching. The result is an array of sounds ranging from warm acoustic tones to searing electric leads, all accessible with the flick of a switch.</h4>
+                            <h2 class="price">
+                                <span>5495.99 lei</span>
+                            </h2>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/white_piano1.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h2 class="title">Roland GP 607 White Digital Piano</h2>
+                            <h4 class="description">A stylish digital mini grand piano with a polished white finish. Behind the traditional apperiance you’ll discover the very latest technology. Bluetooth connectivity lets you wirelessly stream songs from your tablet/phone through the GP607’s powerful 4.1 multi-channel speakers, filling your room with rich, clear sound.</h4>
+                            <h2 class="price">
+                                <span class="discounted-price">21,995.99 lei</span>
+                                <span class="original-price">25,995.99 lei</span>
+                            </h2>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+                    <div class="product new">
+                        <div class="product-picture">
+                            <img src="{% static 'images/best_seller1.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h2 class="title">Fender player electric guitar</h2>
+                            <h4 class="description">The Player Series Telecaster electric guitar is pure Fender, through and through. The feel, the style and, most importantly, the sound—they’re all there, waiting for you to make them whisper or wail for your music. Versatile enough to handle almost anything you can create and durable enough to survive any gig, this workhorse is a trusty sidekick for your musical vision. This model comes in a limited-edition Surf Pearl finish.</h4>
+                            <h2 class="price">
+                                <span>4100.00 lei</span>
+                            </h2>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/yamaha_u1.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h2 class="title">Yamaha U1 Upright Piano Polished Ebony</h2>
+                            <h4 class="description">A perennial favourite among discerning pianists, the Yamaha U1 offers outstanding musical performance, setting the standards by which many other upright pianos are measured. </h4>
+                            <h2 class="price">
+                                <span>17,995.99 lei</span>
+                            </h2>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/drums1.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h2 class="title">Rogue 5-Piece Complete Drum Set Dark Red</h2>
+                            <h4 class="description">The Rogue RGD0520 5-Piece Complete Drum Set includes everything an advancing player needs to push their musical journey forward. This all-inclusive, adult-size kit comes with two rack toms and a floor tom, a matching snare drum and a bass drum. Available in attractive Dark Red finishes with bright chrome hardware.</h4>
+                            <h2 class="price">
+                                <span class="discounted-price">1195.99 lei</span>
+                                <span class="original-price">1395.99 lei</span>
+                            </h2>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/digital_piano1.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h2 class="title">Kurzweil KA130 Simulated Rosewood Digital Piano</h2>
+                            <h4 class="description">The rosewood KA130 88-Key Digital Piano from Kurzweil is an 88-note, fully weighted hammer action keyboard with adjustable touch sensitivity and 16 factory presets featuring pianos, electric pianos, organs, strings, and choir instruments.</h4>
+                            <h2 class="price">
+                                <span>3310.00 lei</span>
+                            </h2>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/acoustic_guitar1.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h2 class="title">Lucero LC100CE Acoustic-Electric Cutaway Classical Guitar Natural</h2>
+                            <h4 class="description">The Lucero LC 100CE cutaway acoustic-electric classical guitar is a pleasure to look at and to play. It features a laminated spruce top and mahogany back and sides. The cutaway allows full fingerboard access and the built-in electronics let you perform in any venue. The LC100CE is a very versatile and affordable guitar. </h4>
+                            <h2 class="price">
+                                <span>755.00 lei</span>
+                            </h2>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+            </div>
+        </section>
+        
+
+        <footer>
+
+            <div class="bottom-nav">
+                <div class="container">
+
+                    <ul>
+                        <li class="list-title">Categories</li>
+                        <li><a href="instruments.html">Instruments</a></li>
+                        <li><a href="equipment_accessories.html">Equipment</a></li>
+                        <li><a href="equipment_accessories.html">Accessories</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">About Us</li>
+                        <li><a href="about_us.html">Our Story</a></li>
+                        <li><a href="about_us.html">Awards</a></li>
+                        <li><a href="about_us.html">Stores</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Social Media</li>
+                        <li><a href="https://www.facebook.com/cristinxvasiliu">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/robitrif/">Instagram</a></li>
+                        <li><a href="https://twitter.com/BarackObama?">Twitter</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Customer Service</li>
+                        <li><a href="customer_service.html">Contact Us</a></li>
+                        <li><a href="customer_service.html">Terms & Conditions</a></li>
+                        <li><a href="customer_service.html">Delivery & Returns</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="copyright-text">
+                2022 &copy; All Rights Reserved
+            </div>
+
+        </footer>
+    </body>
+
+</html>

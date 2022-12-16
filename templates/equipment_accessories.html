@@ -1,0 +1,148 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Equipment & Accessories</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/equipment_accessories_style.css' %}">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="left_header">
+                            <section class="logo">
+                                <strong>Gamma</strong>
+                                <span class="blue_dot"></span> 
+                                <span>Store</span>
+                            </section>
+                        </a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="instruments.html" id="right_header">Instruments</a></li>
+                        <li><a href="equipment_accessories.html" id="right_header">Equipment/Accessories</a></li>
+                        <li><a href="sign_in.html" id="right_header">Sign in</a></li>
+                        <li><a href="cart.html" id="right_header">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="products">
+            <div class="product-slider">
+                <div class="container">
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/fender_picks.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Equipment/Accessories</h5>
+                            <h2 class="title">Fender 351 Shape Celluloid Medley Guitar Picks (12-pack) Medium 12 Pack</h2>
+                            <h4 class="description">Fender picks provide comfort and high-performance flexibility for every performer, with a variety of classic and contemporary materials to suit the playing styles and preferences of every guitarist. The traditional 351 shape, Fender's most popular pick design, is a perfect accessory for players of versatile styles and techniques</h4>
+                            <h2 class="price">
+                                <span class="discounted-price">35.00 lei</span>
+                                <span class="original-price">49.00 lei</span>
+                            </h2>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+                    <div class="product new">
+                        <div class="product-picture">
+                            <img src="{% static 'images/fender_cable1.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Equipment/Accessories</h5>
+                            <h2 class="title">Fender Original Series Limited-Edition Instrument Cable 18.6 ft. Sonic Blue</h2>
+                            <h4 class="description">Fender Original Series Limited-Edition cables in a cool Sonic Blue were designed by combining solid construction with inimitable Fender styling. Featuring spiral shielding and durable nickel-plated connectors, these Fender cables are a reliable choice for the studio and on stage.</h4>
+                            <h2 class="price">
+                                <span>135.00 lei</span>
+                            </h2>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+                    <div class="product new">
+                        <div class="product-picture">
+                            <img src="{% static 'images/best_seller2.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Equipment/Accessories</h5>
+                            <h2 class="title">JBL Tune 710bt wireless headphones</h2>
+                            <h4 class="description">With powerful JBL Pure Bass Sound, the JBL TUNE 710BT headphones play boldly, wirelessly. The lightweight over-ear design offers maximum comfort and immersion in sound. Big in performance, they can be folded in a compact shape to fit any adventure. </h4>
+                            <h3 class="price">
+                                <span class="discounted-price">349.00 lei</span>
+                                <span class="original-price">379.00 lei</span>
+                            </h3>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/best_seller3.jpg' %}" style="width:300px; height:300px;" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Equipment/Accessories</h5>
+                            <h2 class="title">Electro-Voice ZLX 15 speaker</h2>
+                            <h4 class="description">The ZLX-15 gives you the confidence of the industry’s most trusted components – engineered to exacting standards to bring exceptional EV audio quality for larger applications, with or without a subwoofer.</h4>
+                            <h3 class="price">
+                                <span>1879.00 lei</span>
+                            </h3>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+            </div>
+        </section>
+        
+        <footer>
+
+            <div class="bottom-nav">
+                <div class="container">
+
+                    <ul>
+                        <li class="list-title">Categories</li>
+                        <li><a href="instruments.html">Instruments</a></li>
+                        <li><a href="equipment_accessories.html">Equipment</a></li>
+                        <li><a href="equipment_accessories.html">Accessories</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">About Us</li>
+                        <li><a href="about_us.html">Our Story</a></li>
+                        <li><a href="about_us.html">Awards</a></li>
+                        <li><a href="about_us.html">Stores</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Social Media</li>
+                        <li><a href="https://www.facebook.com/cristinxvasiliu">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/robitrif/">Instagram</a></li>
+                        <li><a href="https://twitter.com/BarackObama?">Twitter</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Customer Service</li>
+                        <li><a href="customer_service.html">Contact Us</a></li>
+                        <li><a href="customer_service.html">Terms & Conditions</a></li>
+                        <li><a href="customer_service.html">Delivery & Returns</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="copyright-text">
+                2022 &copy; All Rights Reserved
+            </div>
+
+        </footer>
+    </body>
+
+</html>

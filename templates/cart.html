@@ -1,0 +1,180 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/cart_style.css'%}">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="left_header">
+                            <section class="logo">
+                                <strong>Gamma</strong>
+                                <span class="blue_dot"></span> 
+                                <span>Store</span>
+                            </section>
+                        </a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="instruments.html" id="right_header">Instruments</a></li>
+                        <li><a href="equipment_accessories.html" id="right_header">Equipment/Accessories</a></li>
+                        <li><a href="sign_in.html" id="right_header">Sign in</a></li>
+                        <li><a href="cart.html" id="right_header">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="cart">
+            <div class="cart-page">
+                <div class="container">
+                    <div class="cart-table">
+                        <table>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cart-info">
+                                        <div class="product-picture">
+                                            <img src="{% static 'images/acoustic_electric_guitar1.jpg'%}" alt="">
+                                        </div>
+                                        <div class="product-info">
+                                            <h5 class="categories">Instruments</h5>
+                                            <h2 class="title">Taylor T5z Pro Acoustic-Electric Guitar Pacific Blue</h2>
+                                            <h4 class="price">
+                                                <span>5495.99 lei</span>
+                                            </h4>
+                                            <a href="">Remove</a>
+                                        </div> 
+                                    </div>
+
+                                </td>
+                                <td><input type="number" value="1"></td>
+                                <td>5495.99 lei</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cart-info">
+                                        <div class="product-picture">
+                                            <img src="{% static 'images/fender_cable1.jpg'%}" alt="">
+                                        </div>
+                                        <div class="product-info">
+                                            <h5 class="categories">Equipment/Accessories</h5>
+                                            <h2 class="title">Fender Original Series Limited-Edition Instrument Cable 18.6 ft. Sonic Blue</h2>
+                                            <h4 class="price">
+                                                <span>135.00 lei</span>
+                                            </h4>
+                                            <a href="">Remove</a>
+                                        </div> 
+                                    </div>
+
+                                </td>
+                                <td><input type="number" value="1"></td>
+                                <td>5630.99 lei</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="cart-info">
+                                        <div class="product-picture">
+                                            <img src="{% static 'images/fender_picks.jpg'%}" alt="">
+                                        </div>
+                                        <div class="product-info">
+                                            <h5 class="categories">Equipment/Accessories</h5>
+                                            <h2 class="title">Fender 351 Shape Celluloid Medley Guitar Picks (12-pack) Medium 12 Pack</h2>
+                                            <h4 class="price">
+                                                <span class="discounted-price">35.00 lei</span>
+                                                <span class="original-price">49.00 lei</span>
+                                            </h4>
+                                            <a href="">Remove</a>
+                                        </div> 
+                                    </div>
+
+                                </td>
+                                <td><input type="number" value="1"></td>
+                                <td>5665.99 lei</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="total-price">
+                        <table>
+                            <tr>
+                                <td>Subtotal:</td>
+                                <td>5665.99 lei</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery:</td>
+                                <td>50.00 lei</td>
+                            </tr>
+                            <tr>
+                                <td>Total:</td>
+                                <td>5715.99 lei</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="bottom-nav">
+                <div class="container">
+
+                    <ul>
+                        <li class="list-title">Categories</li>
+                        <li><a href="instruments.html">Instruments</a></li>
+                        <li><a href="equipment_accessories.html">Equipment</a></li>
+                        <li><a href="equipment_accessories.html">Accessories</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">About Us</li>
+                        <li><a href="about_us.html">Our Story</a></li>
+                        <li><a href="about_us.html">Awards</a></li>
+                        <li><a href="about_us.html">Stores</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Social Media</li>
+                        <li><a href="https://www.facebook.com/cristinxvasiliu">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/robitrif/">Instagram</a></li>
+                        <li><a href="https://twitter.com/BarackObama?">Twitter</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Customer Service</li>
+                        <li><a href="customer_service.html">Contact Us</a></li>
+                        <li><a href="customer_service.html">Terms & Conditions</a></li>
+                        <li><a href="customer_service.html">Delivery & Returns</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="copyright-text">
+                2022 &copy; All Rights Reserved
+            </div>
+
+        </footer>
+    </body>
+
+</html>

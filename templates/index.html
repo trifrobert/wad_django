@@ -1,0 +1,150 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Music Store</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/index_style.css' %}">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <section class="logo">
+                    <strong>Gamma</strong>
+                    <span class="blue_dot"></span> 
+                    <span>Store</span>
+                </section>
+                <nav>
+                    <ul>
+                        <li><a href="instruments.html">Instruments</a></li>
+                        <li><a href="equipment_accessories.html">Equipment/Accessories</a></li>
+                        <li><a href="sign_in.html">Sign in</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <img src="{% static 'images/hero_image2.jpg'%}" alt="hero image - yamaha piano">
+            <div class="hero-content">
+
+                <div class="container">
+        
+                    <h1>The Yamaha U1</h1>
+                    <p> For the experienced pianist and professional musician, Yamaha U1 upright pianos are made in Japan and feature outstanding tone, touch and durability. </p>
+                    <nav>
+                        <ul>
+                            <a href="product1.html"> <button>DISCOVER NOW</button> </a>
+                        </ul>
+                    </nav>
+                    
+                 </div>
+        </section>
+
+        <section class="best-sellers">
+            <h2>Best Sellers</h2>
+            <hr>
+            <div class="product-slider">
+                <div class="container">
+
+                    <div class="product new">
+                        <div class="product-picture">
+                            <img src="{% static 'images/best_seller1.jpg' %}" style="width:300px; height:300px;" alt="product: Fender player electric guitar">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Instruments</h5>
+                            <h4 class="title">Fender player electric guitar</h4>
+                            <h3 class="price">
+                                <span>4100.00 lei</span>
+                            </h3>
+                            <button>Add to cart</button>
+                        </div> 
+                    </div>
+
+                    <div class="product">
+                        <div class="product-picture">
+                            <img src="{% static 'images/best_seller2.jpg' %}" style="width:300px; height:300px;" alt="product: JBL Tune 710bt wireless headphones">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Equipment & Accessories</h5>
+                            <h4 class="title">JBL Tune 710bt wireless headphones</h4>
+                            <h3 class="price">
+                                <span class="discounted-price">349.00 lei</span>
+                                <span class="original-price">379.00 lei</span>
+                            </h3>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product new">
+                        <div class="product-picture">
+                            <img src="{% static 'images/best_seller3.jpg'%}" style="width:300px; height:300px;" alt="product: Electro-Voice ZLX 15 speaker">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="categories">Equipment & Accessories</h5>
+                            <h4 class="title">Electro-Voice ZLX 15 speaker</h4>
+                            <h3 class="price">
+                                <span>1879.00 lei</span>
+                            </h3>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        
+        </section>
+
+        <footer>
+
+            <div class="bottom-nav">
+                <div class="container">
+
+                    <ul>
+                        <li class="list-title">Categories</li>
+                        <li><a href="instruments.html">Instruments</a></li>
+                        <li><a href="equipment_accessories.html">Equipment</a></li>
+                        <li><a href="equipment_accessories.html">Accessories</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">About Us</li>
+                        <li><a href="about_us.html">Our Story</a></li>
+                        <li><a href="about_us.html">Awards</a></li>
+                        <li><a href="about_us.html">Stores</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Social Media</li>
+                        <li><a href="https://www.facebook.com/cristinxvasiliu">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/robitrif/">Instagram</a></li>
+                        <li><a href="https://twitter.com/BarackObama?">Twitter</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Customer Service</li>
+                        <li><a href="customer_service.html">Contact Us</a></li>
+                        <li><a href="customer_service.html">Terms & Conditions</a></li>
+                        <li><a href="customer_service.html">Delivery & Returns</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="copyright-text">
+                2022 &copy; All Rights Reserved
+            </div>
+
+        </footer>
+    </body>
+
+</html>

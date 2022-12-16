@@ -1,0 +1,120 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign in</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/sign_in_style.css' %}">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="left_header">
+                            <section class="logo">
+                                <strong>Gamma</strong>
+                                <span class="blue_dot"></span> 
+                                <span>Store</span>
+                            </section>
+                        </a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="instruments.html" id="right_header">Instruments</a></li>
+                        <li><a href="equipment_accessories.html" id="right_header">Equipment/Accessories</a></li>
+                        <li><a href="sign_in.html" id="right_header">Sign in</a></li>
+                        <li><a href="cart.html" id="right_header">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="sign-up">
+
+            <div class="container">
+             
+                <div class="login">
+                    
+                    <div class="title">
+                        <h3><center>Welcome Back! <br></h3>
+                        <h6>Sign in to continue</h6></center>
+                    </div>
+                    
+                    <div class="form">
+                        <div class="input_field">
+                            <label>Username:</label>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="input_field">
+                            <label>Password:</label>
+                            <input type="password" class="input">
+                        </div>
+                        <div class="input_field">
+                            <input type="submit" value="Login" class="button">
+                        </div>
+                        <div class="register">
+                            <nav>
+                                <ul>
+                                    <a href="register.html">Don't have an account? Register</a>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <footer>
+            <div class="bottom-nav">
+                <div class="container">
+                    <ul>
+                        <li class="list-title">Categories</li>
+                        <li><a href="instruments.html">Instruments</a></li>
+                        <li><a href="equipment_accessories.html">Equipment</a></li>
+                        <li><a href="equipment_accessories.html">Accessories</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">About Us</li>
+                        <li><a href="about_us.html">Our Story</a></li>
+                        <li><a href="about_us.html">Awards</a></li>
+                        <li><a href="about_us.html">Stores</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Social Media</li>
+                        <li><a href="https://www.facebook.com/cristinxvasiliu">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/robitrif/">Instagram</a></li>
+                        <li><a href="https://twitter.com/BarackObama?">Twitter</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Customer Service</li>
+                        <li><a href="customer_service.html">Contact Us</a></li>
+                        <li><a href="customer_service.html">Terms & Conditions</a></li>
+                        <li><a href="customer_service.html">Delivery & Returns</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="copyright-text">
+                2022 &copy; All Rights Reserved
+            </div>
+
+        </footer>
+    </body>
+
+</html>

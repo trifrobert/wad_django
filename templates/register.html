@@ -1,0 +1,182 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/register_style.css' %}">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="left_header">
+                            <section class="logo">
+                                <strong>Gamma</strong>
+                                <span class="blue_dot"></span> 
+                                <span>Store</span>
+                            </section>
+                        </a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="instruments.html" id="right_header">Instruments</a></li>
+                        <li><a href="equipment_accessories.html" id="right_header">Equipment/Accessories</a></li>
+                        <li><a href="sign_in.html" id="right_header">Sign in</a></li>
+                        <li><a href="cart.html" id="right_header">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form.errors}}
+            <section class="sign-up">
+
+                <div class="container">
+
+                    <div class="register">
+                        <div class="title">
+                            <h3><center>Create Account <br> </h3>
+                            <h6>Register to continue</h6></center>
+                        </div>
+
+                        <div class="form">
+                            <div class="input_field">
+                                <label>First Name:</label>
+                                <!-- <input type="text" name="first_name" class="input"> -->
+                                {{form.first_name}}
+                            </div>
+                            <div class="input_field">
+                                <label>Last Name:</label>
+                                <!-- <input type="text" name="last_name" class="input"> -->
+                                {{form.last_name}}
+                            </div>
+                            <div class="input_field">
+                                <label>Username:</label>
+                                <!-- <input type="text" name="username" class="input"> -->
+                                {{form.username}}
+                            </div>
+                            <div class="input_field">
+                                <label>Password:</label>
+                                <!-- <input type="password" name="password1" class="input"> -->
+                                {{form.password1}}
+                            </div>
+                            <div class="input_field">
+                                <label>Confirm Password:</label>
+                                <!-- <input type="password" name="password2" class="input"> -->
+                                {{form.password2}}
+                            </div>
+                            <div class="input_field">
+                                <label>Email Address:</label>
+                                <!-- <input type="text" name="email" class="input"> -->
+                                {{form.email}}
+                            </div>
+                            <div class="input_field">
+                                <label>Gender:</label>
+                                <div class="custom_select">
+                                    <!-- <select name="gender" id="gender">
+                                        <option value="">Select</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="female">Other</option>
+                                    </select> -->
+                                    {{form.gender}}
+                                </div>
+                            </div>
+                            <div class="input_field">
+                                <label>Phone Number:</label>
+                                <!-- <input type="text" name="phone" class="input"> -->
+                                {{form.phone}}
+                            </div>
+                            <div class="input_field">
+                                <label>Address:</label>
+                                <!-- <textarea name="address" id="address" class="textarea"></textarea> -->
+                                {{form.address}}
+                            </div>
+                            <div class="input_field">
+                                <input type="submit" value="Login" class="button">
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                
+            </section>
+        </form>
+
+        <footer>
+            <div class="bottom-nav">
+                <div class="container">
+                    <ul>
+                        <li class="list-title">Categories</li>
+                        <li><a href="instruments.html">Instruments</a></li>
+                        <li><a href="equipment_accessories.html">Equipment</a></li>
+                        <li><a href="equipment_accessories.html">Accessories</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">About Us</li>
+                        <li><a href="about_us.html">Our Story</a></li>
+                        <li><a href="about_us.html">Awards</a></li>
+                        <li><a href="about_us.html">Stores</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Social Media</li>
+                        <li><a href="https://www.facebook.com/cristinxvasiliu">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/robitrif/">Instagram</a></li>
+                        <li><a href="https://twitter.com/BarackObama?">Twitter</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="list-title">Customer Service</li>
+                        <li><a href="customer_service.html">Contact Us</a></li>
+                        <li><a href="customer_service.html">Terms & Conditions</a></li>
+                        <li><a href="customer_service.html">Delivery & Returns</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="copyright-text">
+                2022 &copy; All Rights Reserved
+            </div>
+
+        </footer>
+
+    <script>
+                        /* Because i didnt set placeholder values in forms.py they will be set here using vanilla Javascript
+        //We start indexing at one because CSRF_token is considered and input field 
+         */
+
+        //Query All input fields
+        var form_fields = document.getElementsByTagName('input')
+        form_fields[1].placeholder='Enter your first name..';
+        form_fields[2].placeholder='Enter your last name..';
+        form_fields[3].placeholder='Username..';
+        form_fields[4].placeholder='Enter the password...';
+        form_fields[5].placeholder='Re-enter the password...';
+        form_fields[6].placeholder='Enter your email...';
+        form_fields[7].placeholder='Phone...';
+        form_fields[8].placeholder='Address...';
+
+
+        for (var field in form_fields){ 
+            form_fields[field].className += ' input'
+        }
+    </script>
+
+
+    </body>
+</html>
